@@ -13,6 +13,7 @@
 		D4CACB2D2603CC9C00844F5F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4CACB2C2603CC9C00844F5F /* Preview Assets.xcassets */; };
 		D4CACB382603CC9C00844F5F /* PersonalFinanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CACB372603CC9C00844F5F /* PersonalFinanceTests.swift */; };
 		D4CACB432603CC9C00844F5F /* PersonalFinanceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CACB422603CC9C00844F5F /* PersonalFinanceUITests.swift */; };
+		D4CACB542603CCB500844F5F /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = D4CACB532603CCB500844F5F /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		D4CACB3E2603CC9C00844F5F /* PersonalFinanceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PersonalFinanceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4CACB422603CC9C00844F5F /* PersonalFinanceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalFinanceUITests.swift; sourceTree = "<group>"; };
 		D4CACB442603CC9C00844F5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4CACB532603CCB500844F5F /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 		D4CACB192603CC9900844F5F = {
 			isa = PBXGroup;
 			children = (
+				D4CACB532603CCB500844F5F /* .gitignore */,
 				D4CACB242603CC9900844F5F /* PersonalFinance */,
 				D4CACB362603CC9C00844F5F /* PersonalFinanceTests */,
 				D4CACB412603CC9C00844F5F /* PersonalFinanceUITests */,
@@ -234,6 +237,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D4CACB2D2603CC9C00844F5F /* Preview Assets.xcassets in Resources */,
+				D4CACB542603CCB500844F5F /* .gitignore in Resources */,
 				D4CACB2A2603CC9C00844F5F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
