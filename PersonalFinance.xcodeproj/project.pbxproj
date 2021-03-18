@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D4CACB262603CC9900844F5F /* PersonalFinanceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CACB252603CC9900844F5F /* PersonalFinanceApp.swift */; };
+		D4CACB282603CC9900844F5F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CACB272603CC9900844F5F /* ContentView.swift */; };
+		D4CACB2A2603CC9C00844F5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4CACB292603CC9C00844F5F /* Assets.xcassets */; };
+		D4CACB2D2603CC9C00844F5F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4CACB2C2603CC9C00844F5F /* Preview Assets.xcassets */; };
+		D4CACB382603CC9C00844F5F /* PersonalFinanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CACB372603CC9C00844F5F /* PersonalFinanceTests.swift */; };
+		D4CACB432603CC9C00844F5F /* PersonalFinanceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CACB422603CC9C00844F5F /* PersonalFinanceUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D4CACB342603CC9C00844F5F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D4CACB1A2603CC9900844F5F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D4CACB212603CC9900844F5F;
+			remoteInfo = PersonalFinance;
+		};
+		D4CACB3F2603CC9C00844F5F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D4CACB1A2603CC9900844F5F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D4CACB212603CC9900844F5F;
+			remoteInfo = PersonalFinance;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D4CACB222603CC9900844F5F /* PersonalFinance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PersonalFinance.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4CACB252603CC9900844F5F /* PersonalFinanceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalFinanceApp.swift; sourceTree = "<group>"; };
+		D4CACB272603CC9900844F5F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D4CACB292603CC9C00844F5F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D4CACB2C2603CC9C00844F5F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D4CACB2E2603CC9C00844F5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4CACB332603CC9C00844F5F /* PersonalFinanceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PersonalFinanceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4CACB372603CC9C00844F5F /* PersonalFinanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalFinanceTests.swift; sourceTree = "<group>"; };
+		D4CACB392603CC9C00844F5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4CACB3E2603CC9C00844F5F /* PersonalFinanceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PersonalFinanceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4CACB422603CC9C00844F5F /* PersonalFinanceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalFinanceUITests.swift; sourceTree = "<group>"; };
+		D4CACB442603CC9C00844F5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D4CACB1F2603CC9900844F5F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4CACB302603CC9C00844F5F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4CACB3B2603CC9C00844F5F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D4CACB192603CC9900844F5F = {
+			isa = PBXGroup;
+			children = (
+				D4CACB242603CC9900844F5F /* PersonalFinance */,
+				D4CACB362603CC9C00844F5F /* PersonalFinanceTests */,
+				D4CACB412603CC9C00844F5F /* PersonalFinanceUITests */,
+				D4CACB232603CC9900844F5F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D4CACB232603CC9900844F5F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D4CACB222603CC9900844F5F /* PersonalFinance.app */,
+				D4CACB332603CC9C00844F5F /* PersonalFinanceTests.xctest */,
+				D4CACB3E2603CC9C00844F5F /* PersonalFinanceUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D4CACB242603CC9900844F5F /* PersonalFinance */ = {
+			isa = PBXGroup;
+			children = (
+				D4CACB252603CC9900844F5F /* PersonalFinanceApp.swift */,
+				D4CACB272603CC9900844F5F /* ContentView.swift */,
+				D4CACB292603CC9C00844F5F /* Assets.xcassets */,
+				D4CACB2E2603CC9C00844F5F /* Info.plist */,
+				D4CACB2B2603CC9C00844F5F /* Preview Content */,
+			);
+			path = PersonalFinance;
+			sourceTree = "<group>";
+		};
+		D4CACB2B2603CC9C00844F5F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D4CACB2C2603CC9C00844F5F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D4CACB362603CC9C00844F5F /* PersonalFinanceTests */ = {
+			isa = PBXGroup;
+			children = (
+				D4CACB372603CC9C00844F5F /* PersonalFinanceTests.swift */,
+				D4CACB392603CC9C00844F5F /* Info.plist */,
+			);
+			path = PersonalFinanceTests;
+			sourceTree = "<group>";
+		};
+		D4CACB412603CC9C00844F5F /* PersonalFinanceUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D4CACB422603CC9C00844F5F /* PersonalFinanceUITests.swift */,
+				D4CACB442603CC9C00844F5F /* Info.plist */,
+			);
+			path = PersonalFinanceUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D4CACB212603CC9900844F5F /* PersonalFinance */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4CACB472603CC9C00844F5F /* Build configuration list for PBXNativeTarget "PersonalFinance" */;
+			buildPhases = (
+				D4CACB1E2603CC9900844F5F /* Sources */,
+				D4CACB1F2603CC9900844F5F /* Frameworks */,
+				D4CACB202603CC9900844F5F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PersonalFinance;
+			productName = PersonalFinance;
+			productReference = D4CACB222603CC9900844F5F /* PersonalFinance.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D4CACB322603CC9C00844F5F /* PersonalFinanceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4CACB4A2603CC9C00844F5F /* Build configuration list for PBXNativeTarget "PersonalFinanceTests" */;
+			buildPhases = (
+				D4CACB2F2603CC9C00844F5F /* Sources */,
+				D4CACB302603CC9C00844F5F /* Frameworks */,
+				D4CACB312603CC9C00844F5F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D4CACB352603CC9C00844F5F /* PBXTargetDependency */,
+			);
+			name = PersonalFinanceTests;
+			productName = PersonalFinanceTests;
+			productReference = D4CACB332603CC9C00844F5F /* PersonalFinanceTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D4CACB3D2603CC9C00844F5F /* PersonalFinanceUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4CACB4D2603CC9C00844F5F /* Build configuration list for PBXNativeTarget "PersonalFinanceUITests" */;
+			buildPhases = (
+				D4CACB3A2603CC9C00844F5F /* Sources */,
+				D4CACB3B2603CC9C00844F5F /* Frameworks */,
+				D4CACB3C2603CC9C00844F5F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D4CACB402603CC9C00844F5F /* PBXTargetDependency */,
+			);
+			name = PersonalFinanceUITests;
+			productName = PersonalFinanceUITests;
+			productReference = D4CACB3E2603CC9C00844F5F /* PersonalFinanceUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D4CACB1A2603CC9900844F5F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					D4CACB212603CC9900844F5F = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					D4CACB322603CC9C00844F5F = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = D4CACB212603CC9900844F5F;
+					};
+					D4CACB3D2603CC9C00844F5F = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = D4CACB212603CC9900844F5F;
+					};
+				};
+			};
+			buildConfigurationList = D4CACB1D2603CC9900844F5F /* Build configuration list for PBXProject "PersonalFinance" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D4CACB192603CC9900844F5F;
+			productRefGroup = D4CACB232603CC9900844F5F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D4CACB212603CC9900844F5F /* PersonalFinance */,
+				D4CACB322603CC9C00844F5F /* PersonalFinanceTests */,
+				D4CACB3D2603CC9C00844F5F /* PersonalFinanceUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D4CACB202603CC9900844F5F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4CACB2D2603CC9C00844F5F /* Preview Assets.xcassets in Resources */,
+				D4CACB2A2603CC9C00844F5F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4CACB312603CC9C00844F5F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4CACB3C2603CC9C00844F5F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D4CACB1E2603CC9900844F5F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4CACB282603CC9900844F5F /* ContentView.swift in Sources */,
+				D4CACB262603CC9900844F5F /* PersonalFinanceApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4CACB2F2603CC9C00844F5F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4CACB382603CC9C00844F5F /* PersonalFinanceTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4CACB3A2603CC9C00844F5F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4CACB432603CC9C00844F5F /* PersonalFinanceUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D4CACB352603CC9C00844F5F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D4CACB212603CC9900844F5F /* PersonalFinance */;
+			targetProxy = D4CACB342603CC9C00844F5F /* PBXContainerItemProxy */;
+		};
+		D4CACB402603CC9C00844F5F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D4CACB212603CC9900844F5F /* PersonalFinance */;
+			targetProxy = D4CACB3F2603CC9C00844F5F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		D4CACB452603CC9C00844F5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D4CACB462603CC9C00844F5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D4CACB482603CC9C00844F5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"PersonalFinance/Preview Content\"";
+				DEVELOPMENT_TEAM = 5D6D89YR6P;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = PersonalFinance/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Alex-Marchant.PersonalFinance";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D4CACB492603CC9C00844F5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"PersonalFinance/Preview Content\"";
+				DEVELOPMENT_TEAM = 5D6D89YR6P;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = PersonalFinance/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Alex-Marchant.PersonalFinance";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D4CACB4B2603CC9C00844F5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5D6D89YR6P;
+				INFOPLIST_FILE = PersonalFinanceTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Alex-Marchant.PersonalFinanceTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PersonalFinance.app/PersonalFinance";
+			};
+			name = Debug;
+		};
+		D4CACB4C2603CC9C00844F5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5D6D89YR6P;
+				INFOPLIST_FILE = PersonalFinanceTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Alex-Marchant.PersonalFinanceTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PersonalFinance.app/PersonalFinance";
+			};
+			name = Release;
+		};
+		D4CACB4E2603CC9C00844F5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5D6D89YR6P;
+				INFOPLIST_FILE = PersonalFinanceUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Alex-Marchant.PersonalFinanceUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PersonalFinance;
+			};
+			name = Debug;
+		};
+		D4CACB4F2603CC9C00844F5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5D6D89YR6P;
+				INFOPLIST_FILE = PersonalFinanceUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Alex-Marchant.PersonalFinanceUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PersonalFinance;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D4CACB1D2603CC9900844F5F /* Build configuration list for PBXProject "PersonalFinance" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4CACB452603CC9C00844F5F /* Debug */,
+				D4CACB462603CC9C00844F5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D4CACB472603CC9C00844F5F /* Build configuration list for PBXNativeTarget "PersonalFinance" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4CACB482603CC9C00844F5F /* Debug */,
+				D4CACB492603CC9C00844F5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D4CACB4A2603CC9C00844F5F /* Build configuration list for PBXNativeTarget "PersonalFinanceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4CACB4B2603CC9C00844F5F /* Debug */,
+				D4CACB4C2603CC9C00844F5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D4CACB4D2603CC9C00844F5F /* Build configuration list for PBXNativeTarget "PersonalFinanceUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4CACB4E2603CC9C00844F5F /* Debug */,
+				D4CACB4F2603CC9C00844F5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D4CACB1A2603CC9900844F5F /* Project object */;
+}
