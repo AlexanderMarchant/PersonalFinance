@@ -9,6 +9,7 @@ import Foundation
 
 struct Account {
     
+    let id: String
     let name: String
     let balance: Double
     let interest: Double?
@@ -16,6 +17,7 @@ struct Account {
     let currency: Currency
     
     init(name: String, balance: Double, interest: Double?, fixedInterest: Bool, currency: Currency) {
+        self.id = UUID().uuidString
         self.name = name
         self.balance = balance.round(to: 2)
         self.interest = interest?.round(to: 2)
