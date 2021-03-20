@@ -9,9 +9,15 @@ import SwiftUI
 
 @main
 struct PersonalFinanceApp: App {
+    
+    let accounts = [
+        Account(name: "Testing", balance: 534829.23321, interest: 6.23, fixedInterest: true, currency: .GBP)
+    ]
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            
+            ExistingSavingsView(existingSavingsViewModel: ExistingSavingsViewModel(accounts))
         }
     }
 }

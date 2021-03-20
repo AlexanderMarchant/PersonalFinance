@@ -8,12 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		D4CACB262603CC9900844F5F /* PersonalFinanceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CACB252603CC9900844F5F /* PersonalFinanceApp.swift */; };
-		D4CACB282603CC9900844F5F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CACB272603CC9900844F5F /* ContentView.swift */; };
 		D4CACB2A2603CC9C00844F5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4CACB292603CC9C00844F5F /* Assets.xcassets */; };
 		D4CACB2D2603CC9C00844F5F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4CACB2C2603CC9C00844F5F /* Preview Assets.xcassets */; };
 		D4CACB382603CC9C00844F5F /* PersonalFinanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CACB372603CC9C00844F5F /* PersonalFinanceTests.swift */; };
 		D4CACB432603CC9C00844F5F /* PersonalFinanceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CACB422603CC9C00844F5F /* PersonalFinanceUITests.swift */; };
 		D4CACB542603CCB500844F5F /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = D4CACB532603CCB500844F5F /* .gitignore */; };
+		D4CACB5D2603FC0400844F5F /* PFPrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CACB5C2603FC0400844F5F /* PFPrimaryButton.swift */; };
+		D4CACB642603FDD100844F5F /* AppColours.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CACB632603FDD100844F5F /* AppColours.swift */; };
+		D4CACB6A2603FE2400844F5F /* AppColours.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4CACB692603FE2400844F5F /* AppColours.xcassets */; };
+		D4CACB722603FF2200844F5F /* PFBodyTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CACB712603FF2200844F5F /* PFBodyTextView.swift */; };
+		D4CACB772603FF6600844F5F /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CACB762603FF6600844F5F /* Fonts.swift */; };
+		D4DF28BB260548A300840AD2 /* ExistingSavingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DF28BA260548A300840AD2 /* ExistingSavingsViewModel.swift */; };
+		D4DF28C0260548B000840AD2 /* ExistingSavingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DF28BF260548B000840AD2 /* ExistingSavingsView.swift */; };
+		D4DF28C7260549BF00840AD2 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DF28C6260549BF00840AD2 /* Account.swift */; };
+		D4DF28CD26054A0B00840AD2 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DF28CC26054A0B00840AD2 /* Currency.swift */; };
+		D4DF28D326054C8500840AD2 /* SavingsCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DF28D226054C8500840AD2 /* SavingsCardViewModel.swift */; };
+		D4DF28D826054CD800840AD2 /* SavingsCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DF28D726054CD800840AD2 /* SavingsCardView.swift */; };
+		D4DF28DE26054F6500840AD2 /* Double-Round.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DF28DD26054F6500840AD2 /* Double-Round.swift */; };
+		D4DF28E62605536700840AD2 /* PFSubTitleTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DF28E52605536700840AD2 /* PFSubTitleTextView.swift */; };
+		D4DF28EB26060DE900840AD2 /* PFActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DF28EA26060DE800840AD2 /* PFActionButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +49,6 @@
 /* Begin PBXFileReference section */
 		D4CACB222603CC9900844F5F /* PersonalFinance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PersonalFinance.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4CACB252603CC9900844F5F /* PersonalFinanceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalFinanceApp.swift; sourceTree = "<group>"; };
-		D4CACB272603CC9900844F5F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D4CACB292603CC9C00844F5F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D4CACB2C2603CC9C00844F5F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D4CACB2E2603CC9C00844F5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +59,20 @@
 		D4CACB422603CC9C00844F5F /* PersonalFinanceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalFinanceUITests.swift; sourceTree = "<group>"; };
 		D4CACB442603CC9C00844F5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D4CACB532603CCB500844F5F /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		D4CACB5C2603FC0400844F5F /* PFPrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PFPrimaryButton.swift; sourceTree = "<group>"; };
+		D4CACB632603FDD100844F5F /* AppColours.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColours.swift; sourceTree = "<group>"; };
+		D4CACB692603FE2400844F5F /* AppColours.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = AppColours.xcassets; sourceTree = "<group>"; };
+		D4CACB712603FF2200844F5F /* PFBodyTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PFBodyTextView.swift; sourceTree = "<group>"; };
+		D4CACB762603FF6600844F5F /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		D4DF28BA260548A300840AD2 /* ExistingSavingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExistingSavingsViewModel.swift; sourceTree = "<group>"; };
+		D4DF28BF260548B000840AD2 /* ExistingSavingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExistingSavingsView.swift; sourceTree = "<group>"; };
+		D4DF28C6260549BF00840AD2 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		D4DF28CC26054A0B00840AD2 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
+		D4DF28D226054C8500840AD2 /* SavingsCardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavingsCardViewModel.swift; sourceTree = "<group>"; };
+		D4DF28D726054CD800840AD2 /* SavingsCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavingsCardView.swift; sourceTree = "<group>"; };
+		D4DF28DD26054F6500840AD2 /* Double-Round.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double-Round.swift"; sourceTree = "<group>"; };
+		D4DF28E52605536700840AD2 /* PFSubTitleTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PFSubTitleTextView.swift; sourceTree = "<group>"; };
+		D4DF28EA26060DE800840AD2 /* PFActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PFActionButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,9 +124,13 @@
 		D4CACB242603CC9900844F5F /* PersonalFinance */ = {
 			isa = PBXGroup;
 			children = (
+				D4DF28C4260549AC00840AD2 /* Models */,
+				D4DF28B82605486D00840AD2 /* Views */,
+				D4CACB702603FEDC00844F5F /* Services */,
+				D4CACB682603FE1100844F5F /* Content */,
+				D4CACB612603FDB400844F5F /* Extension */,
+				D4CACB582603FB9500844F5F /* Reusables */,
 				D4CACB252603CC9900844F5F /* PersonalFinanceApp.swift */,
-				D4CACB272603CC9900844F5F /* ContentView.swift */,
-				D4CACB292603CC9C00844F5F /* Assets.xcassets */,
 				D4CACB2E2603CC9C00844F5F /* Info.plist */,
 				D4CACB2B2603CC9C00844F5F /* Preview Content */,
 			);
@@ -131,6 +161,159 @@
 				D4CACB442603CC9C00844F5F /* Info.plist */,
 			);
 			path = PersonalFinanceUITests;
+			sourceTree = "<group>";
+		};
+		D4CACB582603FB9500844F5F /* Reusables */ = {
+			isa = PBXGroup;
+			children = (
+				D4CACB592603FBA000844F5F /* Views */,
+			);
+			path = Reusables;
+			sourceTree = "<group>";
+		};
+		D4CACB592603FBA000844F5F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D4CACB5A2603FBA600844F5F /* Buttons */,
+				D4CACB5B2603FBAE00844F5F /* TextViews */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D4CACB5A2603FBA600844F5F /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				D4CACB5C2603FC0400844F5F /* PFPrimaryButton.swift */,
+				D4DF28EA26060DE800840AD2 /* PFActionButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		D4CACB5B2603FBAE00844F5F /* TextViews */ = {
+			isa = PBXGroup;
+			children = (
+				D4CACB712603FF2200844F5F /* PFBodyTextView.swift */,
+				D4DF28E52605536700840AD2 /* PFSubTitleTextView.swift */,
+			);
+			path = TextViews;
+			sourceTree = "<group>";
+		};
+		D4CACB612603FDB400844F5F /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				D4DF28DC26054F5100840AD2 /* Double */,
+				D4CACB622603FDBE00844F5F /* Color */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		D4CACB622603FDBE00844F5F /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				D4CACB632603FDD100844F5F /* AppColours.swift */,
+			);
+			path = Color;
+			sourceTree = "<group>";
+		};
+		D4CACB682603FE1100844F5F /* Content */ = {
+			isa = PBXGroup;
+			children = (
+				D4DF28EF26060E8E00840AD2 /* Images */,
+				D4CACB6E2603FEA800844F5F /* Colours */,
+				D4CACB6F2603FEB100844F5F /* Fonts */,
+			);
+			path = Content;
+			sourceTree = "<group>";
+		};
+		D4CACB6E2603FEA800844F5F /* Colours */ = {
+			isa = PBXGroup;
+			children = (
+				D4CACB692603FE2400844F5F /* AppColours.xcassets */,
+			);
+			path = Colours;
+			sourceTree = "<group>";
+		};
+		D4CACB6F2603FEB100844F5F /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				D4CACB762603FF6600844F5F /* Fonts.swift */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		D4CACB702603FEDC00844F5F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		D4DF28B82605486D00840AD2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D4DF28B92605488000840AD2 /* ExistingSavings */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D4DF28B92605488000840AD2 /* ExistingSavings */ = {
+			isa = PBXGroup;
+			children = (
+				D4DF28D126054C6A00840AD2 /* SavingsCard */,
+				D4DF28BA260548A300840AD2 /* ExistingSavingsViewModel.swift */,
+				D4DF28BF260548B000840AD2 /* ExistingSavingsView.swift */,
+			);
+			path = ExistingSavings;
+			sourceTree = "<group>";
+		};
+		D4DF28C4260549AC00840AD2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D4DF28CB260549FA00840AD2 /* Currency */,
+				D4DF28C5260549B500840AD2 /* Account */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D4DF28C5260549B500840AD2 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				D4DF28C6260549BF00840AD2 /* Account.swift */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		D4DF28CB260549FA00840AD2 /* Currency */ = {
+			isa = PBXGroup;
+			children = (
+				D4DF28CC26054A0B00840AD2 /* Currency.swift */,
+			);
+			path = Currency;
+			sourceTree = "<group>";
+		};
+		D4DF28D126054C6A00840AD2 /* SavingsCard */ = {
+			isa = PBXGroup;
+			children = (
+				D4DF28D226054C8500840AD2 /* SavingsCardViewModel.swift */,
+				D4DF28D726054CD800840AD2 /* SavingsCardView.swift */,
+			);
+			path = SavingsCard;
+			sourceTree = "<group>";
+		};
+		D4DF28DC26054F5100840AD2 /* Double */ = {
+			isa = PBXGroup;
+			children = (
+				D4DF28DD26054F6500840AD2 /* Double-Round.swift */,
+			);
+			path = Double;
+			sourceTree = "<group>";
+		};
+		D4DF28EF26060E8E00840AD2 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				D4CACB292603CC9C00844F5F /* Assets.xcassets */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,6 +422,7 @@
 				D4CACB2D2603CC9C00844F5F /* Preview Assets.xcassets in Resources */,
 				D4CACB542603CCB500844F5F /* .gitignore in Resources */,
 				D4CACB2A2603CC9C00844F5F /* Assets.xcassets in Resources */,
+				D4CACB6A2603FE2400844F5F /* AppColours.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,8 +447,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4CACB282603CC9900844F5F /* ContentView.swift in Sources */,
+				D4DF28CD26054A0B00840AD2 /* Currency.swift in Sources */,
+				D4DF28DE26054F6500840AD2 /* Double-Round.swift in Sources */,
+				D4DF28D826054CD800840AD2 /* SavingsCardView.swift in Sources */,
+				D4CACB5D2603FC0400844F5F /* PFPrimaryButton.swift in Sources */,
+				D4CACB722603FF2200844F5F /* PFBodyTextView.swift in Sources */,
 				D4CACB262603CC9900844F5F /* PersonalFinanceApp.swift in Sources */,
+				D4DF28C0260548B000840AD2 /* ExistingSavingsView.swift in Sources */,
+				D4DF28BB260548A300840AD2 /* ExistingSavingsViewModel.swift in Sources */,
+				D4DF28D326054C8500840AD2 /* SavingsCardViewModel.swift in Sources */,
+				D4DF28C7260549BF00840AD2 /* Account.swift in Sources */,
+				D4CACB772603FF6600844F5F /* Fonts.swift in Sources */,
+				D4DF28EB26060DE900840AD2 /* PFActionButton.swift in Sources */,
+				D4DF28E62605536700840AD2 /* PFSubTitleTextView.swift in Sources */,
+				D4CACB642603FDD100844F5F /* AppColours.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
