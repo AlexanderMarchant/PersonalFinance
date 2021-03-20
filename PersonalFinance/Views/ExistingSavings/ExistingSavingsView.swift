@@ -11,14 +11,40 @@ struct ExistingSavingsView: View {
     
     @ObservedObject var existingSavingsViewModel: ExistingSavingsViewModel
     
+    @State var cardsAreExpanded = false
+    
     var body: some View {
         
         ScrollView(.vertical) {
-            ForEach(0 ..< existingSavingsViewModel.accounts.count) { index in
+            
+            VStack(spacing: 10) {
                 
-                SavingsCardView(savingsCardViewModel: SavingsCardViewModel(existingSavingsViewModel.accounts[index]))
-                
+                ZStack {
+                    ForEach(0 ..< existingSavingsViewModel.accounts.count) { index in
+                        
+                        let count = existingSavingsViewModel.accounts.count - 1
+                        
+                        SavingsCardView(savingsCardViewModel: SavingsCardViewModel(existingSavingsViewModel.accounts[count - index]))
+                            .offset(CGSize(width: 0, height: handleOffset(cardHeight: 100, count - index + 1)))
+                        
+                    }
+                    SavingsCardView(savingsCardViewModel: SavingsCardViewModel(Account(name: "Total Savings", balance: existingSavingsViewModel.totalSavings, interest: nil, fixedInterest: false, currency: .EUR)))
+                        .offset(CGSize(width: 0, height: handleOffset(cardHeight: 100, 0)))
+                        .onTapGesture {
+                            withAnimation {
+                                self.cardsAreExpanded.toggle()
+                            }
+                        }
+                }
             }
+        }
+    }
+    
+    func handleOffset(cardHeight: Int, _ index: Int) -> Int {
+        if cardsAreExpanded {
+            return index * (cardHeight + 10)
+        } else {
+            return index * 10
         }
     }
 }

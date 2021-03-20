@@ -10,9 +10,18 @@ import Foundation
 public class ExistingSavingsViewModel: ObservableObject {
     
     @Published var accounts: [Account]
+    @Published var totalSavings: Double
     
     init(_ accounts: [Account] = [Account]()) {
-        self.accounts = accounts
+        self.accounts = accounts.sorted(by: { $0.balance > $1.balance })
+        
+        var calculatedSavings: Double = 0
+        
+        accounts.forEach({ account in
+            calculatedSavings += account.balance
+        })
+        
+        self.totalSavings = calculatedSavings
     }
     
 }
