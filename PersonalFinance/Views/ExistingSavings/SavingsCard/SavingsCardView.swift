@@ -9,6 +9,8 @@ import SwiftUI
 
 struct SavingsCardView: View {
     
+    @Binding var editingIsEnabled: Bool
+    
     @State private var translation: CGSize = .zero
     
     @State var showingAlert = false
@@ -80,10 +82,10 @@ struct SavingsCardView: View {
                 .shadow(radius: 3)
                 .offset(x: self.translation.width, y: 0)
                 .gesture(
-                    
                     DragGesture()
                         
                         .onChanged { value in
+                            if(!self.editingIsEnabled) { return }
                             
                             if(buttonOpactity < 1.0) {
                                 self.translation = value.translation
@@ -105,6 +107,8 @@ struct SavingsCardView: View {
                             }
                             
                         }.onEnded { value in
+                            
+                            if(!self.editingIsEnabled) { return }
                             
                             if(self.translation.width < -150) {
                                 self.buttonOpactity = 1.0
@@ -135,7 +139,7 @@ struct SavingsCardView: View {
 
 struct SavingsCardView_Previews: PreviewProvider {
     static var previews: some View {
-        SavingsCardView(savingsCardViewModel: SavingsCardViewModel(
+        SavingsCardView(editingIsEnabled: Binding<Bool>.constant(false), savingsCardViewModel: SavingsCardViewModel(
                             Account(
                                 name: "Testing",
                                 balance: 11000.11,

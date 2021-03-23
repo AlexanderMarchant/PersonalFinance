@@ -24,11 +24,14 @@ struct ExistingSavingsView: View {
                         
                         let count = existingSavingsViewModel.accounts.count - 1
                         
-                        SavingsCardView(savingsCardViewModel: SavingsCardViewModel(existingSavingsViewModel.accounts[count - index]))
+                        let viewModel = SavingsCardViewModel(existingSavingsViewModel.accounts[count - index])
+                        
+                        SavingsCardView(editingIsEnabled: self.$cardsAreExpanded, savingsCardViewModel: viewModel)
                             .offset(CGSize(width: 0, height: handleOffset(cardHeight: 100, count - index + 1)))
                         
                     }
-                    SavingsCardView(savingsCardViewModel: SavingsCardViewModel(Account(name: "Total Savings", balance: existingSavingsViewModel.totalSavings, interest: nil, fixedInterest: false, currency: .EUR)))
+                    
+                    SavingsCardView(editingIsEnabled: Binding<Bool>.constant(false), savingsCardViewModel: SavingsCardViewModel(Account(name: "Total Savings", balance: existingSavingsViewModel.totalSavings, interest: nil, fixedInterest: false, currency: .EUR)))
                         .offset(CGSize(width: 0, height: handleOffset(cardHeight: 100, 0)))
                         .onTapGesture {
                             withAnimation {
