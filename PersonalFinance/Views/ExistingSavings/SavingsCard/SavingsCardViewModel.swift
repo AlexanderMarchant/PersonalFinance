@@ -42,6 +42,10 @@ extension SavingsCardView {
             self._account = account
         }
         
+        func getAccount() -> Binding<Account> {
+            return self._account
+        }
+        
         func getAccountId() -> String {
             return self.account.id
         }

@@ -12,6 +12,8 @@ struct SavingsCardView: View {
     @Binding var idOfItemToDelete: String?
     @Binding var editingIsEnabled: Bool
     
+    @State var showingEditForm = false
+    
     @State private var translation: CGSize = .zero
     
     @State private var showingAlert = false
@@ -37,7 +39,6 @@ struct SavingsCardView: View {
                             primaryButton: .destructive(Text("Yes"), action: deleteAccount),
                             secondaryButton: .cancel({
                                 self.resetCardState(animated: true)
-                                    
                                 }
                             )
                         )
@@ -49,7 +50,17 @@ struct SavingsCardView: View {
                 PFActionButton(
                     buttonImage: "edit-icon",
                     backgroundColour: Color.orange,
-                    action: {})
+                    action: {
+                        self.showingEditForm.toggle()
+                    })
+                    .sheet(isPresented: $showingEditForm)
+                    {
+                        EditSavingsAccountView(
+                            viewModel: .init(
+                                self.viewModel.getAccount()
+                            )
+                        )
+                    }
                     .opacity(buttonOpactity)
                     .scaleEffect(CGSize(width: buttonScale, height: buttonScale))
                 

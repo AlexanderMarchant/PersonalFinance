@@ -10,11 +10,11 @@ import Foundation
 struct Account: Identifiable {
     
     let id: String
-    let name: String
-    let balance: Double
-    let interest: Double?
-    let fixedInterest: Bool
-    let currency: Currency
+    var name: String
+    var balance: Double
+    var interest: Double?
+    var fixedInterest: Bool
+    var currency: Currency
     
     init(name: String, balance: Double, interest: Double?, fixedInterest: Bool, currency: Currency) {
         self.id = UUID().uuidString

@@ -7,13 +7,24 @@
 
 import Foundation
 
-enum Currency {
+enum Currency: String, CaseIterable {
     case GBP
     case EUR
     case USD
 }
 
 extension Currency {
+    
+    func getCurrencyName() -> String {
+        switch self {
+        case .GBP:
+            return "Great British Pound"
+        case .EUR:
+            return "Euros"
+        case .USD:
+            return "US Dollars"
+        }
+    }
     
     func getSymbol() -> String {
         switch self {
