@@ -6,31 +6,46 @@
 //
 
 import Foundation
+import SwiftUI
 
-public class SavingsCardViewModel: ObservableObject {
+extension SavingsCardView {
     
-    let account: Account
-    
-    var balance: String
-    var name: String
-    var interestType: String?
-    var interest: String?
-    
-    init(_ account: Account) {
-        self.account = account
+    class ViewModel: ObservableObject {
         
-        self.balance = "\(account.currency.getSymbol())\(account.balance)"
-        self.name = account.name
+        @Binding private var account: Account
         
-        if let interest = account.interest {
-            self.interest = "\(interest)%"
+        var balance: String {
+            return "\(self.account.currency.getSymbol())\(account.balance)"
+        }
+        
+        var name: String {
+            self.account.name
+        }
+        
+        var interest: String {
+            guard let interest = account.interest else { return "" }
+            
+            return "\(interest)%"
+        }
+        
+        var interestType: String {
+            guard let _ = account.interest else { return "" }
             
             if(account.fixedInterest) {
-                self.interestType = "Fixed"
+                return "Fixed"
             } else {
-                self.interestType = "Variable"
+                return "Variable"
             }
         }
+        
+        init(_ account: Binding<Account>) {
+            self._account = account
+        }
+        
+        func getAccountId() -> String {
+            return self.account.id
+        }
+        
     }
     
 }

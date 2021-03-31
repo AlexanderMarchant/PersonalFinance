@@ -7,21 +7,30 @@
 
 import Foundation
 
-public class ExistingSavingsViewModel: ObservableObject {
+extension ExistingSavingsView {
     
-    @Published var accounts: [Account]
-    @Published var totalSavings: Double
-    
-    init(_ accounts: [Account] = [Account]()) {
-        self.accounts = accounts.sorted(by: { $0.balance > $1.balance })
+    class ViewModel: ObservableObject {
         
-        var calculatedSavings: Double = 0
+        @Published var accounts: [Account]
+        @Published var totalSavings: Double
         
-        accounts.forEach({ account in
-            calculatedSavings += account.balance
-        })
+        init(_ accounts: [Account] = [Account]()) {
+            self.accounts = accounts.sorted(by: { $0.balance > $1.balance })
+            
+            var calculatedSavings: Double = 0
+            
+            accounts.forEach({ account in
+                calculatedSavings += account.balance
+            })
+            
+            self.totalSavings = calculatedSavings
+        }
         
-        self.totalSavings = calculatedSavings
+        func removeAccount(with id: String) {
+            self.accounts.removeAll(where: { $0.id == id })
+            
+        }
+        
     }
     
 }

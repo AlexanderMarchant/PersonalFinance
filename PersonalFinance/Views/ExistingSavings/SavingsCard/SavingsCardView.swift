@@ -9,15 +9,16 @@ import SwiftUI
 
 struct SavingsCardView: View {
     
+    @Binding var idOfItemToDelete: String?
     @Binding var editingIsEnabled: Bool
     
     @State private var translation: CGSize = .zero
     
-    @State var showingAlert = false
+    @State private var showingAlert = false
     @State private var buttonOpactity: Double = 0.0
     @State private var buttonScale: Double = 0.1
     
-    @ObservedObject var savingsCardViewModel: SavingsCardViewModel
+    @ObservedObject var viewModel: ViewModel
     
     var body: some View {
         ZStack {
@@ -33,10 +34,13 @@ struct SavingsCardView: View {
                         Alert(
                             title: Text("Delete Savings Account"),
                             message: Text("Are you sure you want to delete this savings account?"),
-                            primaryButton: .destructive(Text("Yes"), action: resetCardState),
-                            secondaryButton: .cancel(resetCardState))
-                        
-                        // On delete, bubble this up and remove the account from the list
+                            primaryButton: .destructive(Text("Yes"), action: deleteAccount),
+                            secondaryButton: .cancel({
+                                self.resetCardState(animated: true)
+                                    
+                                }
+                            )
+                        )
                         
                     }
                     .opacity(buttonOpactity)
@@ -52,7 +56,9 @@ struct SavingsCardView: View {
                 PFActionButton(
                     buttonImage: "forward-icon",
                     backgroundColour: Color.blue,
-                    action: resetCardState)
+                    action: {
+                        self.resetCardState(animated: true)
+                    })
                     .opacity(buttonOpactity)
                     .scaleEffect(CGSize(width: buttonScale, height: buttonScale))
             }
@@ -62,18 +68,18 @@ struct SavingsCardView: View {
                 HStack {
                     
                     VStack(alignment: .leading, spacing: 10) {
-                        PFSubTitleTextView(text: savingsCardViewModel.balance)
+                        PFSubTitleTextView(text: viewModel.balance)
                         
-                        Text(savingsCardViewModel.name)
+                        Text(viewModel.name)
                             .font(.headline)
                     }
                     
                     Spacer()
                     
                     VStack {
-                        Text(savingsCardViewModel.interestType ?? "")
+                        Text(viewModel.interestType)
                             .font(.headline)
-                        PFBodyTextView(text: savingsCardViewModel.interest ?? "")
+                        PFBodyTextView(text: viewModel.interest)
                     }
                 }
                 .padding()
@@ -85,7 +91,8 @@ struct SavingsCardView: View {
                     DragGesture()
                         
                         .onChanged { value in
-                            if(!self.editingIsEnabled) { return }
+                            if(!self.editingIsEnabled) { return
+                            }
                             
                             if(buttonOpactity < 1.0) {
                                 self.translation = value.translation
@@ -125,26 +132,46 @@ struct SavingsCardView: View {
             }
             .frame(height: 100)
             .padding(.horizontal, 15)
+            .onChange(of: self.editingIsEnabled) { value in
+                if(!editingIsEnabled) {
+                    self.resetCardState()
+                }
+            }
         }
     }
     
-    func resetCardState() {
-        withAnimation {
-            self.translation = .zero
-            self.buttonOpactity = 0.0
-            self.buttonScale = 0.1
+    func deleteAccount() {
+        idOfItemToDelete = viewModel.getAccountId()
+        resetCardState(animated: false)
+    }
+    
+    func resetCardState(animated: Bool = true) {
+        if(animated) {
+            withAnimation(.easeOut) {
+                self.resetCardPosition()
+            }
+        } else {
+            resetCardPosition()
         }
+    }
+    
+    private func resetCardPosition() {
+        self.translation = .zero
+        self.buttonOpactity = 0.0
+        self.buttonScale = 0.1
     }
 }
 
 struct SavingsCardView_Previews: PreviewProvider {
     static var previews: some View {
-        SavingsCardView(editingIsEnabled: Binding<Bool>.constant(false), savingsCardViewModel: SavingsCardViewModel(
-                            Account(
+        SavingsCardView(
+            idOfItemToDelete: Binding<String?>.constant(UUID().uuidString),
+            editingIsEnabled: Binding<Bool>.constant(false),
+            viewModel: .init(.constant(Account(
                                 name: "Testing",
                                 balance: 11000.11,
                                 interest: 6.34,
                                 fixedInterest: false,
-                                currency: .GBP)))
+                                currency: .GBP))))
     }
 }
