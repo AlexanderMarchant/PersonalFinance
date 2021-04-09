@@ -22,9 +22,9 @@ struct EditSavingsAccountView: View {
                     TextField("", text: $viewModel.name)
                 }
                 Section(header: Text("Current Balance")) {
-                    TextField("", value: $viewModel.balance, formatter: NumberFormatter())
+                    TextField("", text: $viewModel.balance)
                         .keyboardType(.decimalPad)
-                    Picker(selection: $selectedCurrency, label: Text("Currency")) {
+                    Picker(selection: $viewModel.currency, label: Text("Currency")) {
                         ForEach(Currency.allCases, id: \.self) { element in
                             Text(element.getCurrencyName())
                         }
@@ -43,7 +43,7 @@ struct EditSavingsAccountView: View {
                         .padding(.vertical)
                 ) {
                     Group {
-                        TextField("", value: $viewModel.interest, formatter: NumberFormatter())
+                        TextField("", text: $viewModel.interest)
                             .keyboardType(.decimalPad)
                         
                             Toggle(isOn: $viewModel.fixedInterest) {

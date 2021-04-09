@@ -15,15 +15,15 @@ struct PFPrimaryButton: View {
     var body: some View {
         Button(action: self.action, label: {
             
-            HStack {
-                Text(buttonTitle)
-                    .font(Fonts.buttonFont)
-            }
-            .frame(minWidth: 0, maxWidth: .infinity)
-            .padding()
-            .background(Color.blue)
-            .foregroundColor(Color.white)
+            Text(buttonTitle)
+                .font(Fonts.buttonFont)
+                .frame(minWidth: 0, maxWidth: .infinity)
+                .padding(.vertical, 15)
+                .foregroundColor(Color.white)
+                .background(Color.blue)
         })
+        .cornerRadius(10)
+        
     }
 }
 

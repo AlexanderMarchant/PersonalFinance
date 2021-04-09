@@ -27,7 +27,7 @@ struct Fonts {
     }
     
     static var buttonFont: Font {
-        return Font.system(size: 18, weight: .semibold, design: .default)
+        return Font.system(size: 20, weight: .bold, design: .default)
     }
     
     static var bodyFont: Font {

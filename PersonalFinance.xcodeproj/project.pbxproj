@@ -189,7 +189,6 @@
 			children = (
 				D4DF28C4260549AC00840AD2 /* Models */,
 				D4DF28B82605486D00840AD2 /* Views */,
-				D4CACB702603FEDC00844F5F /* Services */,
 				D4CACB682603FE1100844F5F /* Content */,
 				D4CACB612603FDB400844F5F /* Extension */,
 				D4CACB582603FB9500844F5F /* Reusables */,
@@ -304,13 +303,6 @@
 				D4CACB762603FF6600844F5F /* Fonts.swift */,
 			);
 			path = Fonts;
-			sourceTree = "<group>";
-		};
-		D4CACB702603FEDC00844F5F /* Services */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Services;
 			sourceTree = "<group>";
 		};
 		D4CE214A260B361100B02C00 /* Frameworks */ = {
