@@ -15,6 +15,7 @@ extension ExistingSavingsView {
         @Published var totalSavings: Double
         
         init(_ accounts: [Account] = [Account]()) {
+            
             self.accounts = accounts.sorted(by: { $0.balance > $1.balance })
             
             var calculatedSavings: Double = 0
@@ -24,6 +25,7 @@ extension ExistingSavingsView {
             })
             
             self.totalSavings = calculatedSavings
+            
         }
         
         func removeAccount(with id: String) {
