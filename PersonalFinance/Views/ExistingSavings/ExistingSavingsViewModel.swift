@@ -28,7 +28,6 @@ extension ExistingSavingsView {
         
         func removeAccount(with id: String) {
             self.accounts.removeAll(where: { $0.id == id })
-            
         }
         
     }
